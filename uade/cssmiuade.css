@@ -1,0 +1,968 @@
+﻿.normal { FONT-SIZE:10px; COLOR:black; FONT-FAMILY:verdana; FONT-WEIGHT:NORMAL; DISPLAY:inline}
+.chica { FONT-SIZE:9px; COLOR:gray; FONT-FAMILY:verdana }
+.fecha { FONT-SIZE:10px; COLOR:blue; FONT-FAMILY:verdana; FONT-WEIGHT:bold; }
+.top { FONT-WEIGHT:bold; FONT-SIZE:10px; COLOR:white; FONT-FAMILY:verdana;
+			padding-left:2; padding-right:2; }
+.hometop { FONT-SIZE:11px; COLOR:gray; FONT-FAMILY:verdana }
+
+.tablatop1 { BACKGROUND-COLOR:blue; }
+.tablatop2 { BACKGROUND-COLOR:blue; }
+.barrader { BACKGROUND-COLOR:blue; }
+
+.tdmenu { FONT-WEIGHT:bold; FONT-SIZE:10px; COLOR:white; FONT-FAMILY:verdana }
+.trmenu { FONT-SIZE:10px; COLOR:black; FONT-FAMILY:verdana; BACKGROUND-COLOR:white; }
+.trmenur { FONT-SIZE:10px; COLOR:black; FONT-FAMILY:verdana; BACKGROUND-COLOR:blue; }
+
+.tit1 {
+		FONT-WEIGHT:bold;
+		FONT-SIZE:11px;
+		COLOR:white;
+		FONT-FAMILY:verdana;
+		BACKGROUND-COLOR:blue;
+		}
+
+
+.tit2 {
+		font-weight:bold;
+/*		font-size:10px;*/
+		padding:4;
+		color:white !important;
+		font-family:verdana;
+		background-color:#00659C;
+		border:1px solid #006093;
+		padding:2;
+		width:100%;
+		/*font-variant:small-caps;*/
+		text-align:center;
+		}
+
+.tablatit {
+		FONT-WEIGHT:bold;
+		FONT-SIZE:10px;
+		PADDING:4;
+		COLOR:blue;
+		FONT-FAMILY:verdana;
+		BACKGROUND-COLOR:blue;
+		BORDER:1px solid gray;
+		PADDING:2;
+		WIDTH:100%;
+		}
+
+
+.tit22 {
+			FONT-SIZE:10px;
+			FONT-WEIGHT:bold;
+			COLOR:blue
+			}
+
+.leyenda {
+			FONT-SIZE:10px;
+			COLOR:#005E91;
+			}
+
+.tit3 { FONT-WEIGHT:bold; COLOR:gray }
+.azul { FONT-WEIGHT:bold; COLOR:blue }
+.blanco { FONT-WEIGHT:bold; COLOR:white; BACKGROUND-COLOR:blue; }
+
+.grillahead {
+					FONT-WEIGHT:bold;
+					FONT-SIZE:9px;
+					COLOR:#006093;
+					FONT-FAMILY:verdana;
+					BACKGROUND-COLOR:#A6C7E8;
+					border: solid 1px #8AB6E1;
+					border-bottom:1px solid #006093 !important;
+					border-top:2px solid #006093 !important;					
+					TEXT-ALIGN:CENTER;
+					TEXT-TRANSFORM:UPPERCASE;
+					LETTER-SPACING: 1px;
+					}
+
+.grillaheadgreen
+{
+    color:#00CC33;
+    FONT-WEIGHT:bold;
+	FONT-SIZE:11px;
+	FONT-FAMILY:verdana;
+	border: solid 1px #8AB6E1;
+	border-bottom:1px solid #006093 !important;
+	border-top:2px solid #006093 !important;					
+	TEXT-ALIGN:CENTER;
+	TEXT-TRANSFORM:UPPERCASE;
+	LETTER-SPACING: 1px;
+}	
+
+.grillaheadred
+{
+    color:#FF0000;
+    FONT-WEIGHT:bold;
+	FONT-SIZE:11px;
+	FONT-FAMILY:verdana;
+	border: solid 1px #8AB6E1;
+	border-bottom:1px solid #006093 !important;
+	border-top:2px solid #006093 !important;					
+	TEXT-ALIGN:CENTER;
+	TEXT-TRANSFORM:UPPERCASE;
+	LETTER-SPACING: 1px;
+}
+
+.grillawhite {
+					FONT-WEIGHT:bold;
+					FONT-SIZE:9px;
+					COLOR:#006093;
+					FONT-FAMILY:verdana;
+					border: solid 1px #8AB6E1;
+					border-bottom:1px solid #006093 !important;
+					border-top:2px solid #006093 !important;					
+					TEXT-ALIGN:CENTER;
+					TEXT-TRANSFORM:UPPERCASE;
+					LETTER-SPACING: 1px;
+					}
+				
+.grilla_titsubhead {
+					FONT-SIZE:9px;
+					COLOR:#006093;
+					FONT-FAMILY:verdana;
+					BACKGROUND-COLOR:#D1E2F3;
+					border: solid 1px #A6C7E8;
+					border-top:1px solid #48BFFF !important;						
+					border-bottom:1px solid #48BFFF !important;				
+					TEXT-ALIGN:CENTER;
+					text-transform:uppercase;
+					}
+.grilla_subhead {
+					FONT-SIZE:9px;
+					COLOR:#006093;
+					FONT-FAMILY:verdana;
+					BACKGROUND-COLOR:#D8E7F5;
+					border: solid 1px #C0D8EF;
+					border-bottom:1px solid #C0D8EF !important;				
+					TEXT-ALIGN:CENTER;
+					}
+					
+
+.grillalabel {
+					FONT-WEIGHT:bold;
+					FONT-SIZE:10px;
+					COLOR:gray;
+					FONT-FAMILY:verdana;
+					BACKGROUND-COLOR:blue;
+					BORDER-RIGHT:1px solid;
+					BORDER-LEFT:1px solid;
+					BORDER-TOP:1px solid;
+					BORDER-COLOR:gray;
+					PADDING-LEFT:2;
+					}
+
+.grilla{
+		padding:6px 4px 6px 4px !important;
+		FONT-SIZE:10px;
+		COLOR:black;
+		FONT-FAMILY:verdana;
+		}
+		
+
+.grillan {
+		BORDER-RIGHT:0px solid;
+		BORDER-TOP:0px solid;
+		BORDER-BOTTOM:0px solid;
+		BORDER-LEFT:0px solid;
+		PADDING-LEFT:0;
+		FONT-SIZE:10px;
+		COLOR:black;
+		FONT-FAMILY:verdana;
+		}
+
+.grilla2 {
+		BORDER:gray 1px solid;
+		BACKGROUND-COLOR:gray;
+		PADDING-LEFT:2;
+		FONT-SIZE:10px;
+		COLOR:white;
+		FONT-FAMILY:verdana;
+		FONT-WEIGHT:bold;
+		}
+		
+.grilla3 {
+		FONT-WEIGHT:bold;
+		FONT-SIZE:9px;
+		COLOR:gray;
+		FONT-FAMILY:verdana;
+		BACKGROUND-COLOR:blue;
+		BORDER:1px solid gray;
+		TEXT-ALIGN:LEFT;
+		TEXT-TRANSFORM:UPPERCASE;
+		LETTER-SPACING: 1px;
+		}
+.grilla4 {
+		FONT-WEIGHT:bold;
+		FONT-SIZE:9px;
+		COLOR:gray;
+		FONT-FAMILY:verdana;
+		BACKGROUND-COLOR:#f7f8f9;
+		border-bottom:1px solid #A6C7E8 !important;
+		LETTER-SPACING: 1px;
+		}
+.grilla4:nth-child(odd) {
+		background-color:#ddd;
+		}	
+
+.tablab1 {
+    COLOR: gray;
+    FONT-SIZE: 10px;
+    FONT-FAMILY: Verdana;
+    PADDING:2;
+    margin: 0 auto;
+    text-align:center;
+ border-spacing: 2px !important; 
+		}
+
+
+
+.tablacampos {
+		border:1 solid white;
+		FONT-WEIGHT:bold;
+		COLOR:blue;
+		Background-color:gray;
+	}
+
+.tablatit2 {
+		BACKGROUND-COLOR:blue;
+		FONT-WEIGHT:bold;
+		FONT-SIZE:10px;
+		COLOR:gray;
+		FONT-FAMILY:verdana;
+		}
+
+.tabladatos {
+	BORDER:1px solid;
+	FONT-SIZE:10px;
+	COLOR:gray;
+	FONT-FAMILY:verdana;
+	Width:100%;
+	BORDER-COLOR:gray;
+	}
+
+.tablaresultbaja {
+	BORDER:1px solid;
+	FONT-SIZE:10px;
+	COLOR:gray;
+	FONT-FAMILY:verdana;
+	Width:100%;
+	BORDER-COLOR:gray;
+	cursor: pointer;
+	}
+
+.cursorHand
+{
+	cursor: hand;
+}
+
+.tooltip
+{
+	BORDER:1px solid;
+	FONT-SIZE:10px;
+	COLOR:black;
+	FONT-FAMILY:verdana;
+	BORDER-COLOR:blue;
+	background-color: blue;
+	cursor: pointer;
+}
+
+.tablaDatospintada {
+	BORDER:1px solid;
+	FONT-SIZE:10px;
+	COLOR:white;
+	FONT-FAMILY:verdana;
+	width:100%;
+	BORDER-COLOR:gray;
+	BACKGROUND-COLOR: blue;
+	}
+
+.TablaNeutro { FONT-SIZE:10px; COLOR:gray; FONT-FAMILY:verdana; }
+
+
+.Mensaje { COLOR:red; 
+           text-align:left;
+           line-height:130%;
+           display:block;
+           }
+
+.Mensajech { FONT-SIZE:10px; COLOR:gray }
+
+.ArancelGR { 
+	BORDER:1px solid;
+	FONT-SIZE:12px;
+	COLOR:black;
+	FONT-FAMILY:verdana;
+	BORDER-COLOR:blue;
+	background-color: blue;
+}
+
+
+.TBLinkIzq {
+		BORDER: 0px;
+		FONT-FAMILY:VERDANA;
+		FONT-SIZE:10px;
+		FONT-WEIGHT:bold;
+		COLOR: white ;
+		BACKGROUND-COLOR:blue;
+		WIDTH: 100%;
+		PADDING:1px;
+		}
+
+.TRLinkIzq {
+		BORDER: 1px solid;
+		BORDER-WIDTH: 1px;
+		BORDER-COLOR:blue;
+		FONT-SIZE:10px;
+		FONT-WEIGHT:bold;
+		FONT-FAMILY:verdana;
+		COLOR:white;
+		BACKGROUND-COLOR:blue;
+		PADDING:2px;
+		WIDTH:100%;
+		}
+
+
+
+.TRLinkDer {
+		BORDER: 1px solid;
+		BORDER-WIDTH: 1px;
+		BORDER-COLOR:gray;
+		FONT-SIZE:10px;
+		FONT-WEIGHT:bold;
+		FONT-FAMILY:verdana;
+		COLOR:blue;
+		BACKGROUND-COLOR:blue;
+		PADDING:2px;
+		WIDTH: 100%;
+		}
+
+.TRLinkDerAct {
+		BORDER: 1px solid;
+		BORDER-WIDTH: 1px;
+		BORDER-COLOR:gray;
+		FONT-SIZE:10px;
+		FONT-WEIGHT:bold;
+		FONT-FAMILY:verdana;
+		COLOR:blue;
+		BACKGROUND-COLOR:blue;
+		PADDING:2px;
+		WIDTH: 100%;
+		}
+
+
+
+.boton2 {
+		BORDER-WIDTH:1px;
+		BORDER-COLOR:blue;
+		COLOR:white;
+		BACKGROUND-COLOR:blue;
+		FONT-FAMILY:verdana;
+		FONT-SIZE:10px;
+		TEXT-TRANSFORM:capitalize;
+		CURSOR:hand;
+		}
+
+.Botonmns {
+		BORDER-WIDTH:1px;
+		BORDER-COLOR:blue;
+		COLOR:white;
+		BACKGROUND-COLOR:#F2AB19;
+		text-align:center;
+		margin-left:208px;
+		FONT-FAMILY:verdana;
+		FONT-SIZE:10px;
+		TEXT-TRANSFORM:capitalize;
+		CURSOR:hand;
+		}
+
+
+.input {
+	BORDER:white 1px groove;
+	FONT:11px Verdana;
+	COLOR:black;
+	BACKGROUND-COLOR:gray
+	}
+
+
+
+.combo {
+	BORDER:white 1px groove;
+	FONT:11px Verdana;
+	COLOR:black;
+	BACKGROUND-COLOR:gray
+	}
+
+
+.oculto { display:none }
+.visible { }
+
+.contraido { display:none }
+.expandido { }
+
+.comboDomi { BORDER-RIGHT:white 1px groove; BORDER-TOP:white 1px groove; FONT:11px Verdana; BORDER-LEFT:white 1px groove; WIDTH:200px; COLOR:black; BORDER-BOTTOM:white 1px groove; BACKGROUND-COLOR:gray }
+
+
+.li { text-indent:-20; list-style-image:url('punto_lista_gris.gif');	}
+.li2 { list-style-image:url('punto_lista_gris.gif');	}
+
+.ImgBorder { border:2 solid black }
+
+.neutro { COLOR:gray; }
+.neutro2 { COLOR:gray; }
+
+/* ************************/
+
+.contenedor_tbl {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tit_tbl_planes {
+    background-color: #DCE9F5;
+    border-bottom: solid 1px #00659C;
+    border-top: solid 1px #00659C;
+    text-align: center;
+/*    height: 20px;*/
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: verdana;
+    font-size: 12px;
+    padding: 6px 0 3px 0;
+    font-weight: bold;
+    color: #006093;
+}
+
+.tit_impagas th,
+.tit_xvencer th,
+.tit_pagas th,
+.tit_afacturar th
+ {
+    font-family: "verdana" !important;
+    padding: 6px;
+}
+.tit_impagas td,
+.tit_xvencer td,
+.tit_pagas td,
+.tit_afacturar td
+ {
+
+}
+
+#TableDeudaVencida > tbody > tr.grilla4 {
+    background-color: #F5DCDC;
+
+    border-bottom: solid 1px #F5DCDC;
+    border-top: solid 1px #F5DCDC;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: verdana;
+    font-size: 12px;
+    padding: 6px 0 3px 0;
+    font-weight: bold;
+    color: #9D0B37;   
+
+}
+
+tbody > tr.grilla4  td:last-child
+{
+
+    background-image: url(desplegar.png) 10px 5px; /* fallback */
+    background-image: url(desplegar.png); /* Saf4+, Chrome */
+    background-image: url(desplegar.png); /* Chrome 10+, Saf5.1+ */
+    background-image: url(desplegar.png); /* FF3.6+ */
+    background-image: url(desplegar.png); /* Opera 11.10+ */
+    background-image: url(desplegar.png); /* W3C */ 
+    background-image: url(desplegar.png); /* IE10 */   
+    background-repeat: no-repeat;
+    background-position:95%;    
+    cursor:pointer;
+}
+
+
+
+#TableDeudaVencida > tbody > tr.grilla4 td      
+{
+    border-bottom: solid 1px #F0BBBB;
+    border-top: solid 1px #C20707;
+    padding-right:40px;    
+}
+
+#deuda_vencida td:last-child,
+#sinicono td:last-child
+{/*
+    border-bottom: solid 1px #08517B;
+    border-top: solid 1px #08517B;
+    padding-right:40px;  */
+    background-image: none; 
+}
+
+#sinicono 
+{ 
+background-color: #8E938A !important; 
+color: #DDE0DB !Important; 
+}
+
+
+
+#TableProximosVenc  > tbody > tr.grilla4 {
+    background-color: #F5DCDC;
+    border-bottom: solid 1px #F5DCDC ;
+    border-top: solid 1px #F5DCDC ;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: verdana;
+    font-size: 12px;
+    padding: 6px 0 3px 0;
+    font-weight: bold;
+    color: #FF6600 ;
+}
+
+#TableProximosVenc  > tbody > tr.grilla4 td      
+{
+    border-bottom: solid 1px #FFC39B;
+    border-top: solid 1px #FF6600;
+    padding-right:40px;
+    }
+    
+#TablePagosRealizados  .grilla4 {
+    background-color: #EFF5DC;
+    border-bottom: solid 1px #6CB036;
+    border-top: solid 1px #6CB036;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: verdana;
+    font-size: 12px;
+    padding: 6px 0 3px 0;
+    font-weight: bold;
+    color: #629836;
+}
+
+#TablePagosRealizados  .grilla4 td      
+{
+    border-bottom: solid 1px #CFE7BB;
+    border-top: solid 1px #6CB036;
+    padding-right:40px;    
+    }
+    
+#TableCargasAFact .grilla4 {
+    background-color: #DDE0DB;
+    border-bottom: solid 1px #8E938A;
+    border-top: solid 1px #8E938A;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: verdana;
+    font-size: 12px;
+    padding: 6px 0 3px 0;
+    font-weight: bold;
+    color: #8E938A;
+}
+#TableCargasAFact .grilla4 td      
+{
+    border-bottom: solid 1px #CCCFCA;
+    border-top: solid 1px #8E938A;
+    padding-right:40px;    
+    }
+    
+.tit_carrera .grilla4 {
+    background-color: #A6C7E8;
+    border: solid 1px #00659C;
+    text-align: center;
+    height: 30px;
+    margin-top: 20px;
+}
+
+    
+#TableDeudaVencida > tbody > tr > td[display=table-row]
+    {
+    background-color:Lime;    
+    }
+
+.tbl_planes {
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+    .tbl_planes td {
+        padding: 6px;
+        font-size:90%;
+        font-variant:normal !important;
+    }
+    
+    tbody > tr > td > table > tbody > tr > td:nth-child(2),
+    tbody > tr > td > table > tbody > tr > td:nth-child(3)
+    {
+        font-weight:normal;
+
+    }    
+
+    .tbl_planes tr.anio,
+    .tbl_planes tr.anio td {
+        background-color: #00659C !important;
+        border-top: 2px solid #006093 !important;
+        color: #E8EBEE;
+    }
+
+.adeudado {
+    color: Red;
+    font-size: 120%;
+    text-align: center;
+}
+
+/************************************************************/
+
+/* celdas pares e impares */
+
+/* ReSharper disable once CssNotResolved */
+tr:nth-child {
+    padding: 3px;
+}
+
+.tr_grilla
+/* para IE que lo mira por tv en B&N*/ {
+    *background-color: #d8d8d8;
+    *border-bottom: #006093 1px solid;
+}
+
+
+    /* ReSharper disable CssBrowserCompatibility */
+    .tr_grilla:nth-child(even),
+    /* ReSharper restore CssBrowserCompatibility */
+    .tablab1:nth-child(even) {
+        background-color: #E8ECEE;
+        border-bottom: #006093 1px solid !important;
+    }
+
+    .tr_grilla:nth-child(odd),
+    .tablab1:nth-child(odd) {
+        background-color: #d8d8d8;
+        border-bottom: #006093 1px solid !important;
+    }
+
+
+.tr_grilla_hide {
+    background-color: #EEEEEE;
+}
+
+h3.tit_advertencia {
+    color: Red;
+    text-transform: uppercase !important;
+    color: #00659C;
+    font-weight: normal;
+    font-size:10px !important;
+    margin-left:30px;
+    border: none;
+    border-bottom: solid 1px #00659C;
+    width: 95%;
+    display: block;
+    clear: both;
+    margin-bottom: 10px;
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+.advertencia p {
+    display: block;
+    clear: both;
+    color: #333;
+    font-weight: normal;
+    margin-right: 40px;
+    *margin-left: 40px;
+}
+
+.info_pagos {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-position: 10px top !important;
+    vertical-align: top;
+    display: inline-block;
+    text-align: left;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 5px 5px 5px #ccc;
+    -webkit-box-shadow: 5px 5px 5px #ccc;
+    box-shadow: 5px 5px 5px #ccc;
+    color: #00529B;
+    border-top: none;
+    border-bottom: none;
+    border: solid 1px #90B9DA;
+    background: #F1F1EF;
+    /* ReSharper disable InvalidValue */
+    background-image: url(info.png),10px, middle; /* fallback */
+    /* ReSharper restore InvalidValue */
+    background-image: url(info.png), -webkit-gradient(linear, left top, right bottom, from(#E3E4DE), to(#F1F1EF)); /* Saf4+, Chrome */
+    background-image: url(info.png), -webkit-linear-gradient(left, #E3E4DE, #F1F1EF); /* Chrome 10+, Saf5.1+ */
+    background-image: url(info.png), -moz-linear-gradient(left, #E3E4DE, #F1F1EF); /* FF3.6+ */
+    background-image: url(info.png), -o-linear-gradient(left, #E3E4DE, #F1F1EF); /* Opera 11.10+ */
+    /* ReSharper disable once InvalidValue */
+    background-image: url(info.png), linear-gradient(left, #E3E4DE, #F1F1EF); /* W3C */
+    background-image: url(info.png); /* IE10 */
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+.btn_imprimir {
+    text-decoration: none !important;
+    clear: none;
+    height: 100%;
+    min-height: 40px;
+    width: 100%;
+    vertical-align: top;
+    color: #f7f8f9;
+    cursor:pointer;
+    background: #00659C url(imprimir.png);
+    background-repeat: no-repeat;
+    background-position: 43%;
+    padding-left: 25px;
+    border: solid 1px #004973;
+    -moz-border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+    
+    /*
+    transition: All 1s ease;
+    -webkit-transition: All 1s ease;
+    -moz-transition: All 1s ease;
+    -o-transition: All 1s ease;
+    transform: rotate(0) scale(1) skew(0) translate(0);
+    -webkit-transform: rotate(0) scale(1) skew(0) translate(0);
+    -moz-transform: rotate(0) scale(1) skew(0) translate(0);
+    -o-transform: rotate(0) scale(1) skew(0) translate(0);
+    -ms-transform: rotate(0) scale(1) skew(0) translate(0);
+*/
+}
+/*
+    .btn_imprimir:hover {
+        background: #0081C6 url(imprimir.png);
+    }
+*/
+.btn_calcular {
+    border: none !important;
+    background: #FF9900 url(calcular.png) no-repeat;
+    background-position: 20%;
+    min-height: 30px;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    color: #f7f8f9;
+}
+
+    .btn_calcular:hover {
+        background-color: #FF0000;
+    }
+
+.anio {
+    background-color: #012D46;
+    color: #A5C7E7;
+    border-top: solid 10px orange !important;
+    vertical-align: top;
+}
+
+
+.asign_origen {
+    background-color: #D1E2F3;
+    color: #006093;
+    border-top: 1px solid #48BFFF !important;
+    border-bottom: 1px solid #48BFFF !important;
+}
+
+.asign {
+    background-color: #D1E2F3;
+    color: #006093;
+    border-top: 1px solid #48BFFF !important;
+    border-bottom: 1px solid #48BFFF !important;    
+}
+
+
+.tr_tbl_int {
+    border-bottom: dashed 1px #C0D8EF;
+    background-color: #E6EFF9;
+}
+
+    .tr_tbl_int:last-child {
+        border-bottom: solid 1px #C0D8EF;
+        background-color: #E6EFF9;
+    }
+
+.tr_tbl_up {
+    border-bottom: solid 1px #377DC0;
+    color: #999;
+    text-align: center;
+    background-color: #F0EFEF;
+    font-style: italic	;
+}
+
+    .tr_tbl_up strong {
+        color: #3273A3;
+    }
+    .tr_tbl_up td {
+        color: #5C7778;
+    }
+
+
+.calendario {
+    /* ReSharper disable once InvalidValue */
+    background-image: url(calendario.png), 10px, middle;
+    padding-left: 25px;
+}
+
+
+
+.cc_fecha_pago {
+    background: url(calendario.png) no-repeat;
+    background-position: left;
+    color: #00659C;
+    padding-left: 21px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+
+.cc_descripcion {
+    margin: 10px;
+}
+
+.cc_nro_recibo,
+.cc_prealizados {
+    color: #666;
+}
+
+.cc_monto {
+    background: url(precio.png) no-repeat;
+    background-position: left;
+    color: #00659C;
+    padding-left: 18px;
+    margin: 8px;
+}
+
+    
+
+/****************************************************/
+
+
+.tbl_planes th.tit_impagas
+
+{
+    background-color: #08517B;
+    border-bottom: solid 1px #F5DCDC;
+    border-top: solid 1px #F5DCDC;
+    text-align: center;
+/*    height: 20px;*/
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: verdana;
+    font-size: 12px;
+    padding: 6px 0 3px 0;
+    font-weight: bold;
+    color: #F5DCDC;   
+}
+
+.tbl_planes th.tit_xvencer
+{
+    background-color: #08517B;
+    border-bottom: solid 1px #FFE4C1 ;
+    border-top: solid 1px #FFE4C1 ;
+    text-align: center;
+/*    height: 20px;*/
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: verdana;
+    font-size: 12px;
+    padding: 6px 0 3px 0;
+    font-weight: bold;
+    color: #FFE4C1 ;
+}
+
+.tbl_planes th.tit_pagas
+{
+    background-color: #08517B;
+    border-bottom: solid 1px #EFF5DC;
+    border-top: solid 1px #EFF5DC;
+    text-align: center;
+/*    height: 20px;*/
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: verdana;
+    font-size: 12px;
+    padding: 6px 0 3px 0;
+    font-weight: bold;
+    color: #EFF5DC;
+}
+.tbl_planes th.tit_afacturar
+ {
+    background-color: #08517B;
+    border-bottom: solid 1px #DDE0DB;
+    border-top: solid 1px #DDE0DB;
+    text-align: center;
+/*    height: 20px;*/
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: verdana;
+    font-size: 12px;
+    padding: 6px 0 3px 0;
+    font-weight: bold;
+    color: #DDE0DB;
+}
+
+.tit_carrera{
+    background-color: #EDF3FA;
+    border: solid 1px #A6C7E8;
+    text-align: center;
+    height: 30px;
+    margin-top: 20px;
+    color:# A6C7E8;
+}
+
+      
+/****************************************************/
+
+#deuda_vencida
+
+{
+    background-color: #FFDA8C;
+    border-top: solid 1px #FF6600 !important;
+    border-bottom: solid 1px #FF6600 !important;
+    color: red;
+    font-weight: bold;        
+    }
+
+ 
+#factura_avencer 
+{
+    background-color: #CCFE8B;
+    border-top: solid 1px #78B10A;
+    border-bottom: solid 1px #78B10A;
+    color: #336633;
+    font-weight: bold;
+    }       
+
+#a_facturar ,
+#pago_realizado
+{
+    background-color: #C8CABF;
+    border-top: solid 1px #78B10A;
+    border-bottom: solid 1px #78B10A;
+    color: #336633;
+    font-weight: bold;
+    }    
+ /*
+tr #deuda_vencida.grilla4,
+tr #factura_avencer.grilla4 ,
+tr #a_facturar.grilla4 ,
+tr #pago_realizado.grilla4
+ {
+     background-image: none !important; 
+   }      */
+   #a_facturar {
+     background-image: none !important; 
+   }  
