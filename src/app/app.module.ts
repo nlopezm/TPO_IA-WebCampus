@@ -7,6 +7,8 @@ import { AsistenciaComponent } from './asistencia/asistencia.component';
 import { HeaderComponent } from './header/header.component';
 import { CuadroComponent } from './cuadro/cuadro.component';
 import { AlumnosComponent } from './alumnos/alumnos.component';
+import { HttpClientModule } from '@angular/common/http';
+import { RestService } from './services/rest/rest.service';
 
 @NgModule({
   declarations: [
@@ -18,9 +20,10 @@ import { AlumnosComponent } from './alumnos/alumnos.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [RestService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
