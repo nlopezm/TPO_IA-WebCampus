@@ -1,0 +1,125 @@
+<form name="form1" id="form1">
+  <table width="98%" class="contenedor">
+    <tbody>
+      <tr>
+        <td align="right" class="celdaTituloAsistencia">
+          <h1 class="tituloAsistencia">
+            Asistencia Alumnos</h1>
+          <br>
+        </td>
+        <td align="right" class="celdaInstructivo">
+          <a>
+            <img id="Image1" title="Ver instructivo" src="../../../uade/instructivo.png" alt="Ver instructivo" style="border-width:0px;">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <img src="./../../uade/novedad.png">
+                </td>
+                <td class="mensajeNovedad">
+                  <u>Estimados Docentes:</u> Recomendamos el uso de los botones “Poner presente a todos los alumnos “ y “Poner
+                  no asignado a todos los alumnos” para reducir los tiempos de carga.
+                  <br>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <br>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" width="100%">
+          <div id="tableDiv_Arrays">
+            &nbsp;
+            <input type="image" name="imgPDF" id="imgPDF" title="Exportar a PDF" src="./../../uade/pdf32.png" longdesc="Exportar%20a%20PDF"
+              alt="Exportar a PDF" style="border-width:0px;background-color: transparent !important;"> &nbsp;
+            <input type="image" name="imgXLS" id="imgXLS" title="Exportar a Excel" src="./../../uade/xls32.png" longdesc="Exportar%20a%20Excel"
+              alt="Exportar a Excel" style="border-width:0px;background-color: transparent !important;">
+            <br>
+            <table id="tblAlumnos" class="tblAsistencia" border="0" style="width:100%;">
+              <tbody>
+                <tr>
+                  <td class="celdaListMeses" colspan="5" style="width: 1285px;">
+                    <a id="linkMes8" class="btnMeses">Agosto</a>
+                    <a id="linkMes9" class="btnMeses">Septiembre</a>
+                    <a id="linkMes10" class="btnMesesApretado">Octubre</a>
+                    <a id="linkMes11" class="btnMeses">Noviembre</a>
+                    <a id="linkMes12" class="btnMeses">Diciembre</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tituloAlumno" style="width: 886px;">Alumno</td>
+                  <td class="tituloFechas" style="width: 82px;">
+                    <a id="linkClase9" title="Haga click en la fecha que desea modificar" name="clase9">{{fechas[0]}}</a>
+                  </td>
+                  <td class="tituloFechas" style="width: 174px;">
+                    <a id="linkClase10" title="Haga click en la fecha que desea modificar" name="clase10">{{fechas[1]}}</a>
+                  </td>
+                  <td title="No se pueden cargar asistencias en fechas futuras" class="tituloFechas" style="width: 83px;">{{fechas[2]}}</td>
+                  <td title="No se pueden cargar asistencias en fechas futuras" class="tituloFechas" style="width: 90px;">{{fechas[3]}}</td>
+                </tr>
+                <tr [ngClass]="{'color1': i%2==0, 'color2': i%2!=0}" *ngFor="let alumno of alumnos; let i = index">
+                  <td class="alumno">
+                    <div class="foto">
+                      <img src="{{alumno.foto}}">
+                    </div>
+                    <div class="sinpermiso"></div>
+                    <div class="sinpermiso"></div>
+                    <div class="sinpermiso"></div>
+                    <div class="nombreAlumnoAsistOK">{{alumno.apellido}}, {{alumno.nombre}} ({{alumno.legajo}})
+                      <br>Inasistencia:
+                      <span>{{alumno.inasistencia}}%</span>
+                    </div>
+                  </td>
+                  <td title="No asignado" class="asistenciaOtro simularBoton"></td>
+                  <td class="asistenciaACargar">
+                    <table id="combo139769970-4114-134866342-292996-10-2-0-2_contBotones" width="100%">
+                      <tbody>
+                        <tr>
+                          <td colspan="4" style="height: 4px; font-size: 4px; border:1px solid #DDF1FF !important">&nbsp;</td>
+                        </tr>
+                        <tr style="border:none !important;">
+                          <td id="combo139769970-4114-134866342-292996-10-2-0-2_btnPresente" class="botonPresente" title="Presente"></td>
+                          <td id="combo139769970-4114-134866342-292996-10-2-0-2_btnMedia" class="botonMedia" title="Media Falta"></td>
+                          <td id="combo139769970-4114-134866342-292996-10-2-0-2_btnAusente" class="botonAusente" title="Ausente"></td>
+                          <td id="combo139769970-4114-134866342-292996-10-2-0-2_btnNoAsignado" class="botonNoAsignado" title="No Asignado">
+                            <input name="combo139769970-4114-134866342-292996-10-2-0-2$valorSel" type="text" value="N" id="combo139769970-4114-134866342-292996-10-2-0-2_valorSel"
+                              class="oculto" style="width:0px;">
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                  <td title="No asignado" class="asistenciaOtro"></td>
+                  <td title="No asignado" class="asistenciaOtro"></td>
+                </tr>
+              </tbody>
+            </table>
+            <div id="content_ref">
+              <span class="tit_referencias">Referencias</span>
+              <div>
+                <span class="referencias">
+                  <img src="./../../uade/permisotarde.png" alt="Tiene permiso para llegar tarde a clase" title="Tiene permiso para llegar tarde a clase"> Tiene permiso para llegar tarde a clase</span>
+                <span class="referencias">
+                  <img src="./../../uade/permisotemprano.png" alt="Tiene permiso para retirarse temprano de clase" title="Tiene permiso para retirarse temprano de clase"> Tiene permiso para retirarse temprano de clase</span>
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td align="right" style="padding-right: 20px; padding-top: 7px;">
+          <br>
+          <input type="submit" name="btnGuardar" value="Guardar Asistencia" id="btnGuardar" disabled="disabled" class="btnOculto">
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</form>
+<link href="./uade/reset.css" rel="stylesheet" type="text/css">
+<link href="./uade/asistencia.css" rel="stylesheet" type="text/css">

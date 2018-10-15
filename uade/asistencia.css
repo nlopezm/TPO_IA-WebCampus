@@ -1,0 +1,888 @@
+﻿/*****************************************/
+/* ESTILOS APLICADOS DIRECTO A TAGS HTML */
+/*****************************************/
+body 
+{
+    background-color:#F1F3F5;
+    height:auto;
+    padding-left: 4px;
+    padding-right: 4px; 
+}
+
+table 
+{
+    margin:auto; 
+    border: none;
+}
+
+td 
+{
+    padding:0px;
+    border: none;
+}    
+
+input 
+{
+    width:auto;
+    background-color:#3C71BF;
+    border: solid 1px #0D2058;
+    color:#D2DFF2;
+    font-weight:bold;
+    letter-spacing:0.2em;    
+}
+
+a:link, a:visited, a:hover, a:active 
+{
+    text-decoration:none !important;
+}
+
+td.celdaListMeses a.btnMeses, 
+td.celdaListMeses a.btnMesesApretado
+{
+	/*font-weight:normal \0/IE9 !important;    IE9 */
+	font-weight:normal !important;
+}	
+
+
+/*****************************************/
+/*           TABLA PRINCIPAL             */
+/*****************************************/
+.contenedor 
+{
+    margin:auto; 
+    width:100%;
+}	
+
+#logo 
+{
+    background-image: url('img/banda_azul.gif' );      
+    background-repeat:no-repeat;    
+    background-position:right;
+    background-color:#021A32;
+    width:100%;
+    min-height:70px;
+    height:70px;
+    text-align:left;
+    color:#ffffff;
+    vertical-align:bottom !important;   
+} 
+
+/*****************************************/
+/*               TOP BAR                 */
+/*****************************************/
+
+.mensajeNovedad
+{
+	font-size: 9pt;
+	color: red;
+	font-weight: 800;
+	padding-left: 6px;
+}
+
+.btnlistadoaulas:visited 
+{
+    color:#EBEEF1;
+}    
+.btnlistadoaulas:hover
+{
+    color:#198FFD;
+}
+
+.link_volver 
+{
+    border:none; 
+    padding:3px; 
+    padding-left: 20px;      
+    height:20px; 
+    float:left; 
+    clear:both; 
+    display:block; 
+    width:220px;   
+}
+
+.usuario
+{
+    font-weight:800;
+    height:auto; 
+    padding:3px; 
+    padding-top:3px; 
+    padding-left:20px; 
+    color:#2AA2FD; 
+    float:left; 
+    clear:both; 
+    width:auto; 
+    text-align:left; 
+    border-top:solid 1px #889CAE;
+}  
+
+.btnfinalizar 
+{
+    color:#2AA2FD !important;
+}
+.btnfinalizar:visited 
+{
+    color:#2AA2FD !important;
+}
+.btnfinalizar:hover 
+{
+    color:#0281D5 !important;
+} 
+
+/*****************************************/
+/*             CONTROL AULA              */
+/*****************************************/
+.materiasregulares 
+{
+    border:solid 1px #889CAE;
+    background-color:#006699;
+    font-weight:bold;
+    color:#F1F3F5;    
+    min-height:30px;
+    height:30px;
+    padding-left:5px;
+}  
+    
+.titulo
+{
+    border: solid 1px #889CAE;    
+    background-color:#CAD3DB;  
+    padding:3px;
+    padding-left:10px;    
+    color:#384754;
+    width:100%;
+    overflow:hidden;
+}
+
+.tddias
+{
+    border: solid 1px #D1D9E0;
+    padding:3px;
+    padding-left:30px;
+    color:#556A7D;
+    margin-bottom:10px;
+    background-image: url('img/calendario1.png' );    
+    background-repeat:no-repeat;
+    width:30px !important;
+}
+
+.tdhorario
+{
+    border: solid 1px #D1D9E0;
+    background-image: url('img/hora3.png' );    
+    background-repeat:no-repeat;
+    padding:3px;
+    padding-left:30px;    
+    color:#556A7D;    
+    margin-bottom:10px;
+    width:86px !important;
+}
+
+.tdfechas
+{
+    border: solid 1px #D1D9E0;
+    padding:3px;
+    padding-left:10px;    
+    padding-right:10px;        
+    color:#889CAE;    
+    margin-bottom:10px;  
+    text-align:center !important;
+}
+
+.tdalink
+{
+    background-color:#9EAFBE;
+    padding:3px;
+    padding-left:10px;
+    color:#889CAE;
+    text-align:center;
+    border: solid 1px #889CAE;
+    margin-bottom:10px;
+    text-align: center;
+}  
+.tdalink a
+{
+    color:#ffffff;    
+    font-weight:bold;
+    text-align:center;
+    text-decoration:none;
+} 
+.tdalink a:hover
+{
+    color:#E6EAEE;    
+    font-weight:bold;
+    text-align:center;
+    text-decoration:none;
+}
+
+
+/*****************************************/
+/*          TITULOS ASISTENCIA           */
+/*****************************************/
+.celdaTituloAsistencia 
+{
+    padding-right: 20px; 
+    padding-top: 7px; 
+    text-align: left; 
+    width:95%;     
+}
+
+.tituloAsistencia 
+{
+    border:none;
+    font-weight:bold;
+    font-variant:small-caps;
+    border-bottom: solid 1px #AAB8C4;   
+    margin-bottom:4px; 
+    padding-left:10px;
+    text-align:left !important;
+}    
+
+.celdaInstructivo    
+{
+    width:auto; 
+    max-width:5%; 
+    text-align:right;
+}
+
+.celdaListMeses
+{
+    text-align: center;
+    border: 1px solid #2D2D2D;
+    font-weight: 800;
+    color: #666666;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #DBE7FF;
+}
+
+.btnMeses
+{
+    text-align: center;
+    background-color: #DBE7FF;
+    font-weight: 800;
+    color: #666666;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.btnMeses:hover
+{
+    text-align: center;
+    background-color: #C9D4EA;
+    font-weight: 800;
+    color: #666666;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.btnMesesApretado
+{
+    text-align: center;
+    background-color: #C9D4EA;
+    font-weight: 800;
+    color: #666666;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/*****************************************/
+/*           TABLA ASISTENCIA            */
+/*****************************************/
+.tblAsistencia 
+{
+    border: 1px solid #2D2D2D;
+    padding: 0px;
+    margin: 0px;
+    background-color: #ffffff;
+}
+
+.tituloAlumno
+{
+    background-color: #2D2D2D;
+    color: #EEEEEE;
+    font-weight: 800;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.tituloFechas,
+.tituloFechas_active
+{
+    background-color: #2D2D2D;
+    color: #EEEEEE;
+    font-weight: 800;
+    text-align:center;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.tituloFechas a:link, a:visited, a:active 
+{
+    color: #EEEEEE;
+    font-weight: 800;
+    text-decoration:none !important;
+}
+.tituloFechas a:hover, 
+.tituloFechas_active a
+{
+    color: #198FFD;
+    font-weight: 800;
+    text-decoration: underline !important;
+}
+
+.color1
+{    
+    border-top: 1px solid #EFEFEF;
+    background-color: #EFEFEF;
+}
+
+.color2
+{
+    border-top: 1px solid #ffffff;
+    background-color: #ffffff;
+}
+
+.alumno 
+{
+    font-weight:bold;
+    border: none;
+    color:#333333;
+    font-size: 12px;
+	text-align: center;
+}
+
+.highlight
+{
+    border-bottom: 1px solid #B9E3FF;
+    border-top: 1px solid #B9E3FF;
+    background-color: #DDF1FF;
+	text-align: center;
+	vertical-align:middle;
+}
+
+.foto 
+{
+    float:left;
+    width:30px;
+    border: solid 3px #CAD3DB;
+    background-color:#BDC9D2;
+    background-image: url('img/noimage.gif');
+    background-repeat:no-repeat;
+    background-position: center;
+    margin:2px;
+    height:29px;
+    clear:none;
+    display:block;
+    text-align:center;
+}          
+.foto img
+{
+    border: none;
+    min-width:30px;
+    max-width:30px;
+}      
+
+.filaHeader
+{
+	border-top: 1px solid #ffffff;
+    background-color: #ffffff;
+    height: 35px;
+}
+
+.celdaHeader
+{
+	text-align:center;
+    border-top: 1px solid #DDF1FF;
+    border-left: 1px solid #2D2D2D !important;
+    border-right: 1px solid #2D2D2D !important;
+    border-bottom: 1px solid #000000 !important;
+    background-color: #ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 60px !important;
+}
+
+/****** ESTADOS POSIBLES DE LA ASISTENCIA ******/
+
+.asistenciaACargar
+{
+	text-align:center;
+    border-top: 1px solid #DDF1FF;
+    border-left: 1px solid #2D2D2D !important;
+    border-right: 1px solid #2D2D2D !important;
+    background-color: #DDF1FF;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 60px !important;
+}
+
+.asistenciaPresente 
+{
+    background-image: url('img/icon-presente.png');
+    background-repeat:no-repeat;  
+    background-position: center;
+    text-align:center;
+    border: none;
+}
+    
+.asistenciaAusente
+{
+    background-image: url('img/icon-ausente.png');
+    background-repeat:no-repeat;
+    background-position: center;
+    text-align:center;
+    border: none;
+}   
+
+.asistenciaMediaFalta
+{
+    background-image: url('img/icon-media.png');
+    background-repeat:no-repeat;
+    background-position: center;
+    text-align:center;
+    border: none;
+}   
+
+.asistenciaOtro 
+{
+    background-image: url('img/icon-no.png');
+    background-repeat:no-repeat;
+    background-position: center;
+    text-align:center;
+    border: none;
+} 
+
+.asistenciaPinamar
+{
+    background-image: url('img/pino.png');
+    background-repeat:no-repeat;
+    background-position: center;
+    text-align:center;
+    border: none;
+} 
+
+.botonPresente,
+.botonPresente_active
+{
+    background-image: url('img/button-presente-hover.png');
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    padding: 0;
+    padding-right:5px;
+    padding-left:3px;
+    background-position: center;
+    text-align:center;
+    border: none;
+    float: left;
+    cursor: pointer;
+}
+
+.botonPresente:hover,
+.botonPresente_active
+{
+    background-image: url('img/icon-presente.png');
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    background-position: center;
+    text-align:center;
+    border: none;
+    float: left;
+}
+
+.botonAusente,
+.botonAusente_active
+{
+    background-image: url('img/button-ausente-hover.png');
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    padding: 0;
+    padding-right:7px;
+    background-position: center;
+    text-align:center;
+    border: none;
+    float: left;
+    cursor: pointer;     
+}
+
+.botonAusente:hover,
+.botonAusente_active
+{
+    background-image: url('img/icon-ausente.png');
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    background-position: center;
+    text-align:center;
+    border: none;
+    float: left;
+}
+
+.botonMedia,
+.botonMedia_active
+{
+    background-image: url('img/button-media-hover.png');
+    background-repeat: no-repeat;
+    width: 25px; 
+    height: 25px; 
+    margin: 0;
+    padding-right:5px;    
+    background-position: center;
+    text-align:center;
+    border: none;
+    float: left;
+    cursor: pointer;
+}
+
+.botonMedia:hover,
+.botonMedia_active
+{
+    background-image: url('img/icon-media.png');
+    background-repeat: no-repeat;
+    width: 25px; 
+    height: 25px; 
+    margin: 0;
+    background-position: center;
+    text-align:center;
+    border: none;
+    float: left;
+}
+
+.botonNoAsignado,
+.botonNoAsignado_active
+{
+    background-image: url('img/icon-no.png');
+    background-repeat: no-repeat;
+    width: 25px; 
+    height: 25px; 
+    margin: 0;
+    padding: 0;
+    padding-right:3px;
+    background-position: center;
+    text-align:center;
+    border: none;
+    float: left;
+    cursor: pointer;
+}
+.botonNoAsignado:hover,
+.botonNoAsignado_active
+{
+    background-image: url('img/button-no-hover.png');
+    background-repeat: no-repeat;
+    width: 25px; 
+    height: 25px; 
+    margin: 0;
+    background-position: center;
+    text-align:center;
+    border: none;
+    float: left;
+}
+
+
+.mensajeOK
+{
+	padding-top: 2px; 
+	border:1px solid #DDF1FF !important;
+	color: #82B64F;
+    font-size:90%;
+    background-image: url('img/save_ok.png');
+    background-position:right;	
+	background-repeat:no-repeat;                
+	padding-right:15px;
+	font-weight: 800;
+}
+
+.mensajeGuardando
+{
+	padding-top: 2px; 
+	border:1px solid #DDF1FF !important;
+	color: Black;
+	font-weight: 800;
+	text-align:center;
+}
+
+.mensajeError
+{
+	padding-top: 2px; 
+	border:1px solid #DDF1FF !important;
+	color: #C50031;
+	font-size:90%;	
+    background-position:75px 0px;	
+	background-repeat:no-repeat;                
+	padding-right:20px;
+	font-weight: 800;
+	text-align:center;
+}
+
+.mensajeOKHeader
+{
+	padding-top: 2px; 
+	border:1px solid #FFFFFF !important;
+	color: #82B64F;
+    font-size:90%;
+    background-color: #ffffff !important;
+    background-image: url('img/save_ok.png');
+    background-position:right;	
+	background-repeat:no-repeat;                
+	padding-right:15px;
+	font-weight: 800;
+}
+
+.mensajeGuardandoHeader
+{
+	padding-top: 2px; 
+	border:1px solid #FFFFFF !important;
+	color: Black;
+	font-weight: 800;
+	text-align:center;
+	background-color: #ffffff !important;
+}
+
+.mensajeErrorHeader
+{
+	padding-top: 2px; 
+	border:1px solid #FFFFFF !important;
+	color: #C50031;
+	font-size:90%;
+	background-color: #ffffff !important;
+    background-image: url('img/save_error.png');	
+    background-position:75px 0px;	
+	background-repeat:no-repeat;                
+	padding-right:20px;
+	font-weight: 800;
+	text-align:center;
+}
+
+/****** ESTADOS POSIBLES DEL ALUMNO ******/
+.nombreAlumnoAsistOK 
+{
+    font-weight:normal;
+    text-align:left;
+    border: none;
+    margin-right:20px !important;
+    margin-left:50px !important;        
+    height:auto;
+}
+
+.nombreAlumnoAsistONTHEEDGE 
+{
+    background-image: url('img/allimite.png');        
+    background-repeat:no-repeat;    
+    background-position: right;
+    font-weight:normal;
+    text-align:left;
+    border: none;
+    margin-right:20px !important;
+    margin-left:50px !important;    
+    height:auto;
+}
+
+.nombreAlumnoAsistONTHEEDGE span
+{
+    color: #FF9C3F;
+    font-weight: 800;
+}
+
+.nombreAlumnoAsistFREE 
+{     
+    background-image: url('img/estalibre.png' );      
+    background-repeat:no-repeat;    
+    background-position: right;    
+    font-weight:normal;
+    text-align:left;
+    border: none;
+    margin-right:20px !important;
+    margin-left:50px !important;        
+    height:auto;
+}
+
+.nombreAlumnoAsistFREE span
+{     
+    font-weight: 800;
+    color: #FF0000;
+}
+
+
+/*****************************************/
+/*               BOTONES                 */
+/*****************************************/
+
+.filaBotonGuardarHeader
+{
+    border: 1px solid #2D2D2D !important;
+    border-bottom: 1px dashed #2D2D2D !important;
+    background-color: #ffffff !important;
+	text-align: center !important;
+	vertical-align:middle !important;
+	height: 25px;
+}
+
+.filaBotonGuardarFooter
+{
+    border: 1px solid #2D2D2D !important;
+    border-top: 1px dashed #2D2D2D !important;
+    background-color: #ffffff !important;
+	text-align: center !important;
+	vertical-align:middle !important;
+}
+
+.btnGuardar
+{
+    background-color:#4B8EFC;
+    color:#FFFFFF;
+    font-size: 12px;
+    font-weight:bold;
+    letter-spacing:0.12em;
+    
+    border-top: 1px solid #2D2D2D !important;
+    border-left: 1px solid #2D2D2D !important;
+    border-right: 1px solid #2D2D2D !important;
+    border-bottom: 1px solid #000000 !important;
+    
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+    text-align:center;
+    height: 25px;
+}
+.btnGuardar:hover
+{
+    background-color:#357AE8;
+	border-bottom: 1px solid #000000 !important;
+}
+
+.btnOculto
+{    
+    visibility: hidden;
+    display: none;
+}
+
+
+/*****************************************/
+/*          ESTILOS DE ERRORES           */
+/*****************************************/
+h1.error 
+{
+    font-size:large;
+    color:Red;
+    font-family:Verdana;
+    font-weight:bold;
+}    
+    
+.msgerror 
+{
+    width:430px; 
+    text-align:justify; 
+    padding-left:40px; 
+    padding-top:20px; 
+    line-height:130%
+}  
+.oculto
+{
+    display: none;
+    visibility: hidden;
+}
+
+.invisible
+{
+	visibility: hidden;
+}
+
+.simularBoton
+{
+	cursor: pointer;
+}
+
+.alumno_intercambio 
+{
+	display:inline;
+	clear:none;
+	width:5px;
+	height:5px;
+	float:right;
+	width:108px;
+	height:30px;
+	margin:10px 10px 0px 5px;
+    background-image: url('img/globoterraqueo.png' );      	
+    background-repeat:no-repeat;
+}
+
+.permiso_tarde 
+{
+	display:inline;
+	clear:none;
+	width:5px;
+	height:5px;
+	float:right;
+	width:108px;
+	height:30px;
+	margin:10px 10px 0px 5px;
+    background-image: url('img/permisotarde.png' );      	
+    background-repeat:no-repeat;
+}
+
+    
+.permiso_temprano
+{
+	display:inline;
+	clear:none;
+	width:5px;
+	height:5px;
+	float:right;
+	width:108px;
+	height:30px;
+	margin:10px 10px 0px 5px;
+    background-image: url('img/permisotemprano.png' );      	
+    background-repeat:no-repeat;	
+}
+
+    
+.sinpermiso
+{
+	display:inline;
+	clear:none;
+	width:5px;
+	height:5px;
+	float:right;
+	width:108px;
+	height:30px;
+	margin:10px 10px 0px 5px;
+	}
+
+/* REFERENCIAS*/
+#content_ref 
+{
+    padding: 10px 0px 5px  20px;
+    margin: 10px 0px 10px 0px;    
+    margin: 0 auto;
+    width:95%;
+    display:block;
+    clear:both;  
+}
+
+.tit_referencias 
+{
+    color:#004973;
+    font-weight:bold;
+    font-size:120%;
+    margin-bottom:15px;
+}
+
+.referencias 
+{
+    display:block;
+    clear:both;
+    color:#666;
+    margin-bottom:3px;
+}        
