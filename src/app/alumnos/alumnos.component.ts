@@ -10,23 +10,9 @@ export class AlumnosComponent implements OnInit {
 
   constructor(public rest: RestService) { }
   fechas = ['05/11', '12/11', '19/11', '26/11'];
-  alumnos = [
-    { 'nombre': 'Juan', 'apellido': 'Perez', 'legajo': 1072548, 'inasistencia': 0, 'foto': './../../uade/ID_965306.jpg' },
-    { 'nombre': 'Juan', 'apellido': 'Perez', 'legajo': 1072548, 'inasistencia': 0, 'foto': './../../uade/ID_971739.jpg' },
-    { 'nombre': 'Juan', 'apellido': 'Perez', 'legajo': 1072548, 'inasistencia': 0, 'foto': './../../uade/ID_973340.jpg' },
-    { 'nombre': 'Juan', 'apellido': 'Perez', 'legajo': 1072548, 'inasistencia': 0, 'foto': './../../uade/ID_973340.jpg' },
-    { 'nombre': 'Juan', 'apellido': 'Perez', 'legajo': 1072548, 'inasistencia': 0, 'foto': './../../uade/ID_973340.jpg' },
-    { 'nombre': 'Juan', 'apellido': 'Perez', 'legajo': 1072548, 'inasistencia': 0, 'foto': './../../uade/ID_973340.jpg' },
-    { 'nombre': 'Juan', 'apellido': 'Perez', 'legajo': 1072548, 'inasistencia': 0, 'foto': './../../uade/ID_973340.jpg' },
-    { 'nombre': 'Juan', 'apellido': 'Perez', 'legajo': 1072548, 'inasistencia': 0, 'foto': './../../uade/ID_973340.jpg' },
-    { 'nombre': 'Juan', 'apellido': 'Perez', 'legajo': 1072548, 'inasistencia': 0, 'foto': './../../uade/ID_973340.jpg' },
-    { 'nombre': 'Juan', 'apellido': 'Perez', 'legajo': 1072548, 'inasistencia': 0, 'foto': './../../uade/ID_973340.jpg' },
-    { 'nombre': 'Juan', 'apellido': 'Perez', 'legajo': 1072548, 'inasistencia': 0, 'foto': './../../uade/ID_973340.jpg' },
-    { 'nombre': 'Juan', 'apellido': 'Perez', 'legajo': 1072548, 'inasistencia': 0, 'foto': './../../uade/ID_973340.jpg' },
-    { 'nombre': 'Juan', 'apellido': 'Perez', 'legajo': 1072548, 'inasistencia': 0, 'foto': './../../uade/ID_973340.jpg' },
-  ];
+  alumnos: any;
   ngOnInit() {
-    this.rest.getCurso('curso1').subscribe((data) => this.alumnos = data['alumnos'], () => { });
+    this.rest.getCurso('293597').subscribe((data) => this.alumnos = data['alumnos'], () => { });
 
   }
 
