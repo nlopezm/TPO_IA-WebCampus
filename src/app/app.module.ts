@@ -9,6 +9,8 @@ import { CuadroComponent } from './cuadro/cuadro.component';
 import { AlumnosComponent } from './alumnos/alumnos.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RestService } from './services/rest/rest.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { RestService } from './services/rest/rest.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [RestService],
   bootstrap: [AppComponent]

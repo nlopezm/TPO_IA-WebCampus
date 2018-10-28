@@ -84,13 +84,15 @@
                           <td colspan="4" style="height: 4px; font-size: 4px; border:1px solid #DDF1FF !important">&nbsp;</td>
                         </tr>
                         <tr style="border:none !important;">
-                          <td id="combo139769970-4114-134866342-292996-10-2-0-2_btnPresente" class="botonPresente" title="Presente"></td>
-                          <td id="combo139769970-4114-134866342-292996-10-2-0-2_btnMedia" class="botonMedia" title="Media Falta"></td>
-                          <td id="combo139769970-4114-134866342-292996-10-2-0-2_btnAusente" class="botonAusente" title="Ausente"></td>
-                          <td id="combo139769970-4114-134866342-292996-10-2-0-2_btnNoAsignado" class="botonNoAsignado" title="No Asignado">
-                            <input name="combo139769970-4114-134866342-292996-10-2-0-2$valorSel" type="text" value="N" id="combo139769970-4114-134866342-292996-10-2-0-2_valorSel"
-                              class="oculto" style="width:0px;">
-                          </td>
+                          <button mat-icon-button>
+                            <mat-icon style="color:green;border-radius:10px;" [ngStyle]="{'border': alumno.presente==2?'4px solid darkgreen':''}">check</mat-icon>
+                          </button>
+                          <button mat-icon-button>
+                            <mat-icon style="color:red;border-radius:10px;" [ngStyle]="{'border': alumno.presente==0?'4px solid darkgreen':''}">close</mat-icon>
+                          </button>
+                          <button mat-icon-button>
+                            <mat-icon style="color:darkorange;border-radius:10px;" [ngStyle]="{'border': alumno.presente==1?'4px solid darkgreen':''}">access_time</mat-icon>
+                          </button>
                         </tr>
                       </tbody>
                     </table>
