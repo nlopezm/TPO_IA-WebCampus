@@ -22,11 +22,23 @@
                   <img src="./../../uade/novedad.png">
                 </td>
                 <td class="mensajeNovedad">
-                  <u>Estimados Docentes:</u> Recomendamos el uso de los botones “Poner presente a todos los alumnos “ y “Poner
-                  no asignado a todos los alumnos” para reducir los tiempos de carga.
+                  <u>Estimados Docentes:</u> Seleccione una o más fotos del estado actual del aula para poder determinar los
+                  alumnos presentes.
                   <br>
+                  <br>
+                  <a mat-mini-fab type="button" (click)="cargarImagenes()">
+                    <label for="fileUpload">
+                      <mat-icon>add</mat-icon>
+                    </label>
+                  </a>
+                  <input id="fileUpload" style="display:none" type="file" multiple="true" (change)="onSelectFile($event)" accept="image/*">
+                </td>
+                <td>
+                  <img src="{{imagen}}" *ngFor="let imagen of imagenes" style="max-height:200px">
                 </td>
               </tr>
+              <a mat-raised-button color="primary" [disabled]="tomandoAsistencia" (click)="!tomandoAsistencia && tomarAsistencia()">Tomar asistencia</a>
+              <mat-spinner *ngIf="tomandoAsistencia"></mat-spinner>
             </tbody>
           </table>
           <br>
@@ -63,6 +75,7 @@
                   <td title="No se pueden cargar asistencias en fechas futuras" class="tituloFechas" style="width: 83px;">{{fechas[2]}}</td>
                   <td title="No se pueden cargar asistencias en fechas futuras" class="tituloFechas" style="width: 90px;">{{fechas[3]}}</td>
                 </tr>
+                <mat-spinner *ngIf="cargando"></mat-spinner>
                 <tr [ngClass]="{'color1': i%2==0, 'color2': i%2!=0}" *ngFor="let alumno of alumnos; let i = index">
                   <td class="alumno">
                     <div class="foto">
@@ -84,15 +97,16 @@
                           <td colspan="4" style="height: 4px; font-size: 4px; border:1px solid #DDF1FF !important">&nbsp;</td>
                         </tr>
                         <tr style="border:none !important;">
-                          <button mat-icon-button>
-                            <mat-icon style="color:green;border-radius:10px;" [ngStyle]="{'border': alumno.presente==2?'4px solid darkgreen':''}">check</mat-icon>
-                          </button>
-                          <button mat-icon-button>
-                            <mat-icon style="color:red;border-radius:10px;" [ngStyle]="{'border': alumno.presente==0?'4px solid darkgreen':''}">close</mat-icon>
-                          </button>
-                          <button mat-icon-button>
-                            <mat-icon style="color:darkorange;border-radius:10px;" [ngStyle]="{'border': alumno.presente==1?'4px solid darkgreen':''}">access_time</mat-icon>
-                          </button>
+                          <a mat-icon-button>
+                            <mat-icon style="color:green;border-radius:10px;" [ngStyle]="{'border': alumno.presente==2?'4px solid darkgreen':''}" (click)="alumno.presente=2">check</mat-icon>
+                          </a>
+                          <a mat-icon-button>
+                            <mat-icon style="color:red;border-radius:10px;" [ngStyle]="{'border': alumno.presente==0?'4px solid darkgreen':''}" (click)="alumno.presente=0">close</mat-icon>
+                          </a>
+                          <a mat-icon-button>
+                            <mat-icon style="color:darkorange;border-radius:10px;" [ngStyle]="{'border': alumno.presente==1?'4px solid darkgreen':''}"
+                              (click)="alumno.presente=1">access_time</mat-icon>
+                          </a>
                         </tr>
                       </tbody>
                     </table>

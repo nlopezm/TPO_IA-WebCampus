@@ -14,17 +14,13 @@ import 'rxjs/Rx';
 
   getCurso(curso: string): Observable<{}> {
     curso = 'curso' + curso.toLowerCase();
-    return this.http.get(this.baseUrl + 'persongroups/' + curso + '?expand=alumnos').pipe(
-      map(this.extractData),
-      catchError(function (e) {
-        return Observable.throw(e.status);
-      }
-      )
-    );
+    return this.http.get(this.baseUrl + 'persongroups/' + curso + '?expand=alumnos');
   }
 
-  private extractData(res: Response) {
-    const body = res;
-    return body || {};
+  tomarAsistencia(curso: string, imagenes: any = []): Observable<{}> {
+    const body = {};
+    body['base64'] = imagenes;
+    return this.http.post(this.baseUrl + 'persongroups/' + curso + '/asistencia', body);
   }
+
 }
