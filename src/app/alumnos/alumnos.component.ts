@@ -48,8 +48,8 @@ export class AlumnosComponent implements OnInit {
           if (!element.presente) {
             element.presente = 0;
           }
-          for (let i = 0; i < clase.alumnos.length; i++) {
-            if (element.legajo == clase.alumnos[i].legajo) {
+          for (let i = 0; i < clase['alumnos'].length; i++) {
+            if (element.legajo === clase['alumnos'][i].legajo) {
               element.presente = 2;
             }
           }
