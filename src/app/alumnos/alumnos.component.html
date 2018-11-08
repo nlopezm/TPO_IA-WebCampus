@@ -13,46 +13,21 @@
           </a>
         </td>
       </tr>
-      <tr>
-        <td colspan="2">
-          <table>
-            <tbody>
-              <tr>
-                <td>
-                  <img src="./src/assets/uade/novedad.png">
-                </td>
-                <td class="mensajeNovedad">
-                  <u>Estimados Docentes:</u> Seleccione una o más fotos del estado actual del aula para poder determinar los
-                  alumnos presentes.
-                  <br>
-                  <br>
-                  <a mat-mini-fab type="button" (click)="cargarImagenes()">
-                    <label for="fileUpload">
-                      <mat-icon>add</mat-icon>
-                    </label>
-                  </a>
-                  <input id="fileUpload" style="display:none" type="file" multiple="true" (change)="onSelectFile($event)" accept="image/*">
-                </td>
-                <td>
-                  <img src="{{imagen}}" *ngFor="let imagen of imagenes" style="max-height:200px">
-                </td>
-              </tr>
-              <a mat-raised-button color="primary" [disabled]="tomandoAsistencia" (click)="!tomandoAsistencia && tomarAsistencia()">Tomar asistencia</a>
-              <mat-spinner *ngIf="tomandoAsistencia"></mat-spinner>
-            </tbody>
-          </table>
-          <br>
-        </td>
+      <tr style="text-align: center">
+        <span class="mensajeNovedad">Estimados Docentes: Seleccione una o más fotos del estado actual del aula para poder determinar los alumnos presentes.</span>
+        <a mat-button type="button" color="primary" (click)="cargarImagenes()" style="width: 100%">
+          <label for="fileUpload">
+            Seleccionar imágenes...
+          </label>
+        </a>
+        <input id="fileUpload" style="display:none" type="file" multiple="true" (change)="onSelectFile($event)" accept="image/*">
+        <img src="{{imagen}}" *ngFor="let imagen of imagenes" style="max-height: 250px;border: 4px solid cadetblue;border-radius: 10px;max-width: 250px">
+        <a *ngIf="imagenes.length" mat-raised-button color="primary" [disabled]="tomandoAsistencia" (click)="!tomandoAsistencia && tomarAsistencia()" style="width: 80%;margin:15px">Tomar asistencia por foto</a>
+        <mat-spinner *ngIf="tomandoAsistencia"></mat-spinner>
       </tr>
       <tr>
         <td colspan="2" width="100%">
           <div id="tableDiv_Arrays">
-            &nbsp;
-            <input type="image" name="imgPDF" id="imgPDF" title="Exportar a PDF" src="./src/assets/uade/pdf32.png" longdesc="Exportar%20a%20PDF"
-              alt="Exportar a PDF" style="border-width:0px;background-color: transparent !important;"> &nbsp;
-            <input type="image" name="imgXLS" id="imgXLS" title="Exportar a Excel" src="./src/assets/uade/xls32.png" longdesc="Exportar%20a%20Excel"
-              alt="Exportar a Excel" style="border-width:0px;background-color: transparent !important;">
-            <br>
             <table id="tblAlumnos" class="tblAsistencia" border="0" style="width:100%;">
               <tbody>
                 <tr>
