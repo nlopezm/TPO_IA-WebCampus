@@ -76,7 +76,7 @@
                             <mat-icon style="color:green;border-radius:10px;" [ngStyle]="{'border': alumno.presente==2?'4px solid darkgreen':''}" (click)="alumno.presente=2">check</mat-icon>
                           </a>
                           <a mat-icon-button>
-                            <mat-icon style="color:red;border-radius:10px;" [ngStyle]="{'border': alumno.presente==0?'4px solid darkgreen':''}" (click)="alumno.presente=0">close</mat-icon>
+                            <mat-icon style="color:red;border-radius:10px;" [ngStyle]="{'border': !alumno.presente?'4px solid darkgreen':''}" (click)="alumno.presente=0">close</mat-icon>
                           </a>
                           <a mat-icon-button>
                             <mat-icon style="color:darkorange;border-radius:10px;" [ngStyle]="{'border': alumno.presente==1?'4px solid darkgreen':''}"
