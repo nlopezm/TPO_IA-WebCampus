@@ -75,6 +75,14 @@ export class AlumnosComponent implements OnInit {
     );
   }
 
+  asistenciaManual() {
+    const alumnos = this.alumnos.filter(alumno => alumno.presente).map(alumno => alumno.id);
+    this.rest.tomarAsistenciaManual('curso293597', alumnos).subscribe(
+      () => { },
+      () => { }
+    );
+  }
+
   cargarImagenes() {
     document.getElementById('fileUpload').click();
   }

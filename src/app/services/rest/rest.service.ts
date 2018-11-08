@@ -23,4 +23,10 @@ import 'rxjs/Rx';
     return this.http.post(this.baseUrl + 'persongroups/' + curso + '/asistencia', body);
   }
 
+  tomarAsistenciaManual(curso: string, alumnos: any = []): Observable<{}> {
+    const body = {};
+    body['alumnos'] = alumnos;
+    return this.http.post(this.baseUrl + 'persongroups/' + curso + '/asistenciaManual', body);
+  }
+
 }
