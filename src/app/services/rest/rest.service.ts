@@ -14,7 +14,7 @@ import 'rxjs/Rx';
 
   getCurso(curso: string): Observable<{}> {
     curso = 'curso' + curso.toLowerCase();
-    return this.http.get(this.baseUrl + 'persongroups/' + curso + '?expand=alumnos');
+    return this.http.get(this.baseUrl + 'persongroups/' + curso + '?expand=alumnos,clases');
   }
 
   tomarAsistencia(curso: string, imagenes: any = []): Observable<{}> {
