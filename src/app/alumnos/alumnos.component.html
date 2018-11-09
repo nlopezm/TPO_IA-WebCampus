@@ -1,3 +1,4 @@
+<mat-spinner style="position:fixed;left:45%" *ngIf="tomandoAsistencia"></mat-spinner>
 <form name="form1" id="form1">
   <table width="98%" class="contenedor">
     <tbody>
@@ -14,8 +15,8 @@
         </td>
       </tr>
       <tr style="text-align: center">
-        <span class="mensajeNovedad">Estimados Docentes: Seleccione una o más fotos del estado actual del aula para poder determinar los alumnos presentes.</span>
-        <a mat-button type="button" color="primary" (click)="cargarImagenes()" style="width: 100%">
+        <span class="mensajeNovedad">Estimado Docente: Seleccione una o más fotos del estado actual del aula para poder determinar los alumnos presentes.</span>
+        <a mat-button type="button" color="primary" (click)="!tomandoAsistencia && cargarImagenes()" style="width: 100%" [disabled]="tomandoAsistencia">
           <label for="fileUpload">
             Seleccionar imágenes...
           </label>
@@ -23,7 +24,6 @@
         <input id="fileUpload" style="display:none" type="file" multiple="true" (change)="onSelectFile($event)" accept="image/*">
         <img src="{{imagen}}" *ngFor="let imagen of imagenes" style="max-height: 250px;border: 4px solid cadetblue;border-radius: 10px;max-width: 250px">
         <a *ngIf="imagenes.length" mat-raised-button color="primary" [disabled]="tomandoAsistencia" (click)="!tomandoAsistencia && tomarAsistencia()" style="width: 80%;margin:15px">Tomar asistencia por foto</a>
-        <mat-spinner *ngIf="tomandoAsistencia"></mat-spinner>
       </tr>
       <tr>
         <td colspan="2" width="100%">
@@ -112,6 +112,6 @@
     </tbody>
   </table>
 </form>
-<a mat-flat-button color="primary" (click)="asistenciaManual()">
+<a mat-flat-button color="primary" (click)="!tomandoAsistencia && asistenciaManual()" [disabled]="tomandoAsistencia">
   Confirmar asistencia manual <mat-icon>check</mat-icon>
 </a>

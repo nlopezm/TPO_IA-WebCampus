@@ -76,10 +76,11 @@ export class AlumnosComponent implements OnInit {
   }
 
   asistenciaManual() {
+    this.tomandoAsistencia = true;
     const alumnos = this.alumnos.filter(alumno => alumno.presente).map(alumno => alumno.id);
     this.rest.tomarAsistenciaManual('curso293597', alumnos).subscribe(
-      () => { },
-      () => { }
+      () => { this.tomandoAsistencia = false; },
+      () => { this.tomandoAsistencia = false; }
     );
   }
 
